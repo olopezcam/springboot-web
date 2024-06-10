@@ -17,10 +17,10 @@ public class UserRestController {
 
     @GetMapping("/details")
     public Map<String, Object> details(){
-        User user = new User("Pepe", "García");
+        User user = new User("Pepe", "García", "pepe@correo.com");
         Map<String, Object> body = new HashMap<>();
 
-        body.put("tittle", "Hola mundo spring boot");
+        body.put("title", "Hola mundo spring boot");
         body.put("user", user);
 
         // body.put("name", "Pepe");
